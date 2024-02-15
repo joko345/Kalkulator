@@ -1,0 +1,71 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;/*untuk menghilangkan jarak di bagian kiri/langsung dempet*/
+}
+html{
+    font-family: "montserrat","sans-serif";
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{/*karena class memakai dot/titik*/
+    width: 90%;
+    max-width: 400px;
+    background-color: rgb(15, 105, 141);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.display{
+    background-color: lightgray;
+    height: 115px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+}
+.display-history{
+    opacity: 0.4;
+    font-size: 20px;
+}
+.temp-result{
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    opacity: 0.4;
+    font-size: 20px;
+}
+.all_button{
+    /*display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr; */
+    color: whitesmoke;
+    display: grid;
+    grid-template: repeat(4, 1fr) /repeat(4, 1fr);/*1 frame*/
+}
+.btn-0{
+    grid-column: 1/3;
+}
+.button{/*bagian class yang sama dengan btn-0 hanya disingkat.
+    semua class number bernama button sehingga ini mengefek seluruh angka*/
+    border: 0.5px solid rgba(124, 50, 50, 0);
+    display: inline-block;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px ;
+    cursor: pointer;/*cursor saat klik angka*/
+}
+.button:hover{
+    background-color: rgb(12, 62, 95);
+}
+.operation, .last-entity-clear, .all-clear, .equal{
+    background-color: rgb(8, 82, 114);
+}
