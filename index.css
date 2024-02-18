@@ -3,6 +3,9 @@
     margin:0;
     box-sizing: border-box;/*untuk menghilangkan jarak di bagian kiri/langsung dempet*/
 }
+h2{
+    text-align: center;
+}
 html{
     font-family: "montserrat","sans-serif";
 }
